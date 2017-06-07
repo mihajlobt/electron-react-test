@@ -1,0 +1,54 @@
+{
+  "name": "sine",
+  "productName": "Sine",
+  "version": "0.0.0",
+  "description": "My majestic app",
+  "license": "MIT",
+  "repository": "mihajlobt/sine",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "primer.com"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^1.0.0",
+    "electron-reload": "^1.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "devtron": "^1.1.0",
+    "electron": "^1.3.3",
+    "electron-compilers": "^5.9.0",
+    "electron-packager": "^8.0.0",
+    "electron-prebuilt-compile": "^1.6.11",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
